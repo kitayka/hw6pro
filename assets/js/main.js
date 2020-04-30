@@ -20,7 +20,7 @@ function CircleLength (radius) {
     this.radius = radius;
 
     this.calcCircleLength = function() {
-        return (2 * Math.PI * radius);
+        return (2 * Math.PI * this.radius);
     }
 }
 
@@ -35,7 +35,7 @@ function ArithmeticMean (a, b) {
     this.b = b;
 
     this.calcArithmeticMean = function() {
-        return ((a + b)/ 2);
+        return ((this.a + this.b)/ 2);
     }
 }
 
@@ -56,7 +56,7 @@ function ArrMean(arr) {
         for (let i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
-        return (sum / arr.length);
+        return (sum / this.arr.length);
     }
 }
 
